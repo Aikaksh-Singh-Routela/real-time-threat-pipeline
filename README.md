@@ -1,3 +1,4 @@
+markdown
 # 🔍 Real-Time Threat Detection Pipeline
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -20,13 +21,13 @@ A **real-time network log monitoring system** that detects cyber threats using M
 | **🔄 End-to-End Pipeline** | From log generation to threat detection |
 
 ## 🏗️ Architecture
-
 Log Generator → Queue Buffer → ML Classifier → Live Dashboard
 ↓ ↓ ↓ ↓
 Simulates Handles Random Real-time
 Network Burst Forest + Metrics
 Traffic Traffic TF-IDF Display
 
+text
 
 ## 📊 How It Works
 
@@ -64,22 +65,61 @@ source venv/bin/activate  # Linux/Mac
 
 # Install dependencies
 pip install scikit-learn pandas numpy joblib
+Run the Pipeline
+bash
+python real_time_threat_pipeline.py
+📊 Sample Output
+text
+[LOG GENERATOR] Generating network logs...
+[QUEUE] Processing log #1: Normal traffic
+[CLASSIFIER] Prediction: Normal (Confidence: 95.2%)
+[DASHBOARD] Threat Detected: No | Suspicious Count: 0 | Total: 100
+
+[LOG GENERATOR] Generating suspicious pattern...
+[QUEUE] Processing log #42: Multiple failed attempts
+[CLASSIFIER] Prediction: THREAT DETECTED (Confidence: 98.9%)
+[DASHBOARD] Threat Detected: YES | Suspicious Count: 3 | Total: 200
+📈 Performance Metrics
+Metric	Value
+Accuracy	98.92%
+Processing Speed	2 logs/second
+Update Frequency	Every 2 seconds
+Models Used	Random Forest + TF-IDF
+📁 Project Structure
+text
+real-time-threat-pipeline/
+├── real_time_threat_pipeline.py   # Main pipeline script
+├── model/                          # Saved ML model
+├── logs/                           # Generated log files
+└── README.md                       # Documentation
+🔧 Configuration
+You can modify these parameters in the script:
+
+Parameter	Default	Description
+LOG_RATE	2 logs/sec	Log generation speed
+QUEUE_SIZE	100	Maximum queue capacity
+UPDATE_INTERVAL	2 seconds	Dashboard refresh rate
+TEST_SPLIT	0.2	Train/test split ratio
+🚀 Future Improvements
+Add more threat patterns (SQL injection, XSS, etc.)
+
+Implement real-time alerting (email/SMS)
+
+Add support for live network traffic capture
+
+Create web-based dashboard (Streamlit/FastAPI)
+
+Add model retraining pipeline
+
+🤝 Contributing
+Contributions welcome! Feel free to submit issues and pull requests.
+
+📄 License
+MIT License
+
+🔗 Links
+GitHub: Aikaksh-Singh-Routela/real-time-threat-pipeline
+
+Author: Aikaksh Singh Routela
 
 Built with 🔒, 🐍, and 🤖 by Aikaksh Singh Routela
-
-text
-
-## What's Improved:
-
-| Before | After |
-|--------|-------|
-| No badges | ✅ Tech stack badges |
-| Basic description | ✅ Detailed features table |
-| Simple architecture text | ✅ Visual diagram |
-| No tech stack section | ✅ Complete tech stack table |
-| Minimal installation | ✅ Full setup instructions |
-| No sample output | ✅ Real output example |
-| No metrics | ✅ Performance table |
-| No future plans | ✅ Roadmap section |
-
-
