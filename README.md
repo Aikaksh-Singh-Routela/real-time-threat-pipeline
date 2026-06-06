@@ -9,6 +9,10 @@
 
 A **real-time network log monitoring system** that detects cyber threats using Machine Learning. The pipeline processes 2 logs/second with **98.92% accuracy**.
 
+## 🔗 Links
+
+- **GitHub**: [real-time-threat-pipeline](https://github.com/Aikaksh-Singh-Routela/real-time-threat-pipeline)
+
 ### Key Features
 
 | Feature | Description |
@@ -115,9 +119,6 @@ Contributions welcome! Feel free to submit issues and pull requests.
 
 📄 License
 MIT License
-
-🔗 Links
-GitHub: Aikaksh-Singh-Routela/real-time-threat-pipeline
 
 Author: Aikaksh Singh Routela
 
